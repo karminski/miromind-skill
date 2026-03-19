@@ -9,8 +9,10 @@ metadata:
         os: ["linux", "darwin", "win32"],
         skills: ["playwright-mcp"],
         requires: {
-          bins: ["playwright-mcp"]
+          bins: ["playwright-mcp"],
+          env: ["MIROMIND_EMAIL", "MIROMIND_PASSWORD"]
         },
+        primaryEnv: "MIROMIND_EMAIL",
         install: [
           {
             id: "skill-playwright-mcp",
